@@ -7,7 +7,7 @@ const Gif = (props) => {
     setSelectedGif(gifID);
   };
   return (
-    <img src={url} alt="gif" className="gif" onClick={handleClick}/>
+    <img src={url} alt="gif" className="gif" onClick={handleClick} />
   );
 };
 
