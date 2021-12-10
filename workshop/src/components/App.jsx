@@ -14,6 +14,7 @@ const App = () => {
     'gG6OcTSRWaSis', '13HgwGsXF0aiGY', '13UZisxBxkjPwI', 'zOvBKUUEERdNm',
     'PnpkimJ5mrZRe', 'LmNwrBhejkK9EFP504', '5ntdy5Ban1dIY', 'ZG719ozZxGuThHBckn',
     'TilmLMmWrRYYHjLfub', 'kHrKpJiCbOmkWD4xT9']);
+
   const searchGif = (keyword) => {
     giphy.search({
       q: keyword,
@@ -28,7 +29,7 @@ const App = () => {
   return (
     <div>
       <div className="left-scene">
-        <SearchBar searchGif={searchGif}/>
+        <SearchBar searchGif={searchGif} />
         <div className="selected-gif">
           <Gif gifID={selectedGif} />
         </div>
