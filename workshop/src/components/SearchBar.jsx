@@ -1,8 +1,9 @@
 import React from 'react';
 
-const SearchBar = () => {
+const SearchBar = (props) => {
+  const { searchGif } = props;
   return (
-    <input type="text" className="form-search form-control" />
+    <input type="text" className="form-search form-control" onChange={searchGif} />
   );
 };
 
