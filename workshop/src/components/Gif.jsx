@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Gif = () => {
+const Gif = (props) => {
+  const { gifID } = props;
+  const url = `https://media.giphy.com/media/${gifID}/giphy.gif`;
   return (
-    <div>
-
-    </div>
+    <img src={url} alt="gif" className="gif" />
   );
 };
 
